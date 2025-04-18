@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => ({
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
-  base: mode === 'production' ? '/Nutriscoop-Web/' : '/',
+  base: '/Nutriscoop-Web/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -24,5 +24,6 @@ export default defineConfig(({ mode }) => ({
     outDir: 'dist',
     sourcemap: true,
     minify: 'esbuild',
+    emptyOutDir: true,
   },
 }));
