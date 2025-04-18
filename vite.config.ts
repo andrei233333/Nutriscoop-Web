@@ -4,17 +4,17 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
+export default defineConfig(({ command }) => ({
   server: {
     port: 3000,
     open: true, // This will open the browser automatically
   },
   plugins: [
     react(),
-    mode === 'development' &&
+    command === 'serve' &&
     componentTagger(),
   ].filter(Boolean),
-  base: '/Nutriscoop-Web/',
+  base: command === 'build' ? '/Nutriscoop-Web/' : '/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
