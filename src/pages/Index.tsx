@@ -20,7 +20,7 @@ const Index = () => {
       {/* Hero Section - Full Screen */}
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
         {/* Decorative Background Elements */}
-        <div className="absolute inset-0 bg-[url('${import.meta.env.BASE_URL}images/nutriscoop background.jpg')] bg-cover bg-center opacity-5"></div>
+        <div className="absolute inset-0 bg-[url('${import.meta.env.BASE_URL}assets/images/nutriscoop background.jpg')] bg-cover bg-center opacity-5"></div>
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-nutri-orange/10 rounded-full blur-3xl"></div>
         <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-nutri-green/10 rounded-full blur-3xl"></div>
         <div className="absolute top-1/3 right-1/3 w-16 h-16 bg-nutri-green/20 rounded-full blur-lg"></div>
