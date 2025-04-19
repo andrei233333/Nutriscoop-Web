@@ -87,7 +87,7 @@ const ProductDetail = () => {
                 <div className="p-8 md:p-12 flex items-center justify-center h-full">
                   <div className={`relative aspect-square w-full max-w-md mx-auto transition-opacity duration-700 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}>
                     <img
-                      src={`/images/${product.id.replace('-', '_')}.png`}
+                      src={`${import.meta.env.BASE_URL}images/${product.id.replace('-', '_')}.png`}
                       alt={product.title}
                       className="h-full w-full object-contain drop-shadow-lg"
                       onLoad={() => setImageLoaded(true)}
@@ -188,7 +188,7 @@ const ProductDetail = () => {
                     </div>
                     
                     <img
-                      src={`/images/${relatedProduct.id.replace('-', '_')}.png`}
+                      src={`${import.meta.env.BASE_URL}images/${relatedProduct.id.replace('-', '_')}.png`}
                       alt={relatedProduct.title}
                       className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110 drop-shadow-md"
                     />
