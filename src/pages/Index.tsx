@@ -550,7 +550,7 @@ const Index = () => {
               <div className="flex items-center gap-3 mb-4">
                 <div className="bg-white rounded-full p-2">
                   <img 
-                    src={`${import.meta.env.BASE_URL}assets/images/nutriscoop_logo.png`}
+                    src="/Nutriscoop-Web/images/nutriscoop_logo.png"
                     alt="NutriScoop"
                     className="h-12 w-auto"
                   />
