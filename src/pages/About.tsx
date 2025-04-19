@@ -61,7 +61,7 @@ const About = () => {
                 <div className="relative overflow-hidden md:col-span-3">
                   <div className="absolute inset-0 bg-gradient-to-r from-nutri-green/30 to-nutri-orange/30 opacity-30 mix-blend-overlay"></div>
                   <img 
-                    src={`${import.meta.env.BASE_URL}images/staff.png`} 
+                    src="/images/staff.png" 
                     alt="NutriScoop Store" 
                     className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
                   />

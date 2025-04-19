@@ -254,7 +254,7 @@ const Index = () => {
                 <div className="group relative">
                   <div className="relative mb-6 aspect-square rounded-full overflow-hidden border-8 border-nutri-orange/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl">
                     <img 
-                      src={`${import.meta.env.BASE_URL}images/carrot.png`} 
+                      src="/images/carrot.png" 
                       alt="Carrot Flavor Ice Cream" 
                       className="w-full h-full object-cover"
                     />
@@ -292,7 +292,7 @@ const Index = () => {
                 <div className="group relative">
                   <div className="relative mb-6 aspect-square rounded-full overflow-hidden border-8 border-nutri-green/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl">
                     <img 
-                      src={`${import.meta.env.BASE_URL}images/corn.png`} 
+                      src="/images/corn.png" 
                       alt="Corn Flavor Ice Cream" 
                       className="w-full h-full object-cover"
                     />
@@ -330,7 +330,7 @@ const Index = () => {
                 <div className="group relative">
                   <div className="relative mb-6 aspect-square rounded-full overflow-hidden border-8 border-nutri-green/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl">
                     <img 
-                      src={`${import.meta.env.BASE_URL}images/cucumber.png`} 
+                      src="/images/cucumber.png" 
                       alt="Cucumber Flavor Ice Cream" 
                       className="w-full h-full object-cover"
                     />
@@ -368,7 +368,7 @@ const Index = () => {
                 <div className="group relative">
                   <div className="relative mb-6 aspect-square rounded-full overflow-hidden border-8 border-nutri-orange/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl">
                     <img 
-                      src={`${import.meta.env.BASE_URL}images/sweet_potato.png`} 
+                      src="/images/sweet_potato.png" 
                       alt="Sweet Potato Flavor Ice Cream" 
                       className="w-full h-full object-cover"
                     />
