@@ -71,7 +71,7 @@ const ProductDetail = () => {
               <ArrowLeft className="h-5 w-5" />
             </div>
             <span className="text-nutri-green font-medium group-hover:text-nutri-orange transition-colors">Back to All Flavors</span>
-        </Link>
+          </Link>
           
           {/* Product Display */}
           <div className="bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl overflow-hidden border border-gray-100">
@@ -120,24 +120,42 @@ const ProductDetail = () => {
                   <p className="text-gray-600 text-lg leading-relaxed">{product.fullDescription}</p>
                 </div>
                 
-                {/* Benefits Section */}
-                <div>
-                  <h2 className="text-xl font-bold text-nutri-green flex items-center mb-4">
-                    <Leaf className="h-5 w-5 text-nutri-orange mr-2" />
-                    Health Benefits
-                  </h2>
-                  <div className="bg-nutri-green/5 rounded-xl p-5">
-                    <ul className="space-y-3">
-                      {product.benefits.map((benefit, index) => (
-                        <li key={index} className="flex items-start">
-                          <div className="rounded-full bg-nutri-orange/10 p-1 mr-3 mt-1">
-                            <Check className="h-4 w-4 text-nutri-orange" />
-                          </div>
-                          <span className="text-gray-700">{benefit}</span>
-                        </li>
-                      ))}
-                    </ul>
+                {/* Price Display with Enhanced Styling */}
+                <div className="space-y-4">
+                  <h2 className="text-xl font-semibold text-nutri-green">Choose Your Size</h2>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-nutri-green/20 hover:border-nutri-green">
+                      <div className="text-center">
+                        <h3 className="text-lg font-medium text-nutri-green mb-2">Regular</h3>
+                        <div className="flex items-center justify-center gap-2">
+                          <span className="text-3xl font-bold text-nutri-orange">₱54.00</span>
+                        </div>
+                        <p className="mt-2 text-sm text-gray-600">Perfect for a quick treat</p>
+                      </div>
+                    </div>
+                    <div className="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-nutri-orange/20 hover:border-nutri-orange">
+                      <div className="text-center">
+                        <h3 className="text-lg font-medium text-nutri-orange mb-2">Grande</h3>
+                        <div className="flex items-center justify-center gap-2">
+                          <span className="text-3xl font-bold text-nutri-green">₱64.00</span>
+                        </div>
+                        <p className="mt-2 text-sm text-gray-600">For those who want more</p>
+                      </div>
+                    </div>
                   </div>
+                </div>
+
+                {/* Benefits Section */}
+                <div className="space-y-4 mt-8">
+                  <h2 className="text-xl font-semibold text-nutri-green">Benefits</h2>
+                  <ul className="space-y-3">
+                    {product.benefits.map((benefit, index) => (
+                      <li key={index} className="flex items-start gap-3 bg-white/50 p-3 rounded-lg hover:bg-white/80 transition-colors">
+                        <Check className="h-5 w-5 text-nutri-orange shrink-0 mt-0.5" />
+                        <span className="text-gray-600">{benefit}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </div>

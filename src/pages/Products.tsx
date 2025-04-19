@@ -112,13 +112,27 @@ const Products = () => {
                         ))}
                       </div>
                       
+                      {/* Price Display */}
+                      <div className="flex justify-center gap-4 mb-4">
+                        <div className="bg-nutri-green/10 rounded-lg p-2 group-hover:bg-nutri-green/20 transition-colors">
+                          <span className="text-nutri-green font-medium">Regular</span>
+                          <p className="text-nutri-orange font-bold">₱54.00</p>
+                        </div>
+                        <div className="bg-nutri-orange/10 rounded-lg p-2 group-hover:bg-nutri-orange/20 transition-colors">
+                          <span className="text-nutri-orange font-medium">Grande</span>
+                          <p className="text-nutri-green font-bold">₱64.00</p>
+                        </div>
+                      </div>
+                      
                       {/* Button */}
-                      <Button 
-                        className="w-full bg-nutri-green hover:bg-nutri-orange text-white group transition-all duration-300"
-                      >
-                        View Details
-                        <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                      </Button>
+                      <Link to={`/products/${product.id}`}>
+                        <Button 
+                          variant="outline" 
+                          className="rounded-full border-nutri-orange border-2 text-nutri-orange hover:bg-nutri-orange hover:text-white transition-all duration-300 hover:scale-105"
+                        >
+                          View Details
+                        </Button>
+                      </Link>
                     </div>
                   </div>
                 </Link>

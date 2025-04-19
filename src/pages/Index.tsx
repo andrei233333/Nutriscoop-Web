@@ -284,6 +284,17 @@ const Index = () => {
                     <p className="text-gray-600 my-3 text-sm">
                       A bitter-sweet flavor beneficial for regulating sugar levels.
                     </p>
+                    {/* Price Display */}
+                    <div className="flex justify-center gap-4 mb-4">
+                      <div className="bg-nutri-green/10 rounded-lg p-2 group-hover:bg-nutri-green/20 transition-colors">
+                        <span className="text-nutri-green font-medium">Regular</span>
+                        <p className="text-nutri-orange font-bold">₱54.00</p>
+                      </div>
+                      <div className="bg-nutri-orange/10 rounded-lg p-2 group-hover:bg-nutri-orange/20 transition-colors">
+                        <span className="text-nutri-orange font-medium">Grande</span>
+                        <p className="text-nutri-green font-bold">₱64.00</p>
+                      </div>
+                    </div>
                     <Link to="/products/carrot">
                       <Button 
                         variant="outline" 
@@ -329,6 +340,17 @@ const Index = () => {
                     <p className="text-gray-600 my-3 text-sm">
                       A milky sweet flavor rich in vitamins and antioxidants.
                     </p>
+                    {/* Price Display */}
+                    <div className="flex justify-center gap-4 mb-4">
+                      <div className="bg-nutri-green/10 rounded-lg p-2 group-hover:bg-nutri-green/20 transition-colors">
+                        <span className="text-nutri-green font-medium">Regular</span>
+                        <p className="text-nutri-orange font-bold">₱54.00</p>
+                      </div>
+                      <div className="bg-nutri-orange/10 rounded-lg p-2 group-hover:bg-nutri-orange/20 transition-colors">
+                        <span className="text-nutri-orange font-medium">Grande</span>
+                        <p className="text-nutri-green font-bold">₱64.00</p>
+                      </div>
+                    </div>
                     <Link to="/products/corn">
                       <Button 
                         variant="outline" 
@@ -374,6 +396,17 @@ const Index = () => {
                     <p className="text-gray-600 my-3 text-sm">
                       A mild lightly sweet flavor high in water content.
                     </p>
+                    {/* Price Display */}
+                    <div className="flex justify-center gap-4 mb-4">
+                      <div className="bg-nutri-green/10 rounded-lg p-2 group-hover:bg-nutri-green/20 transition-colors">
+                        <span className="text-nutri-green font-medium">Regular</span>
+                        <p className="text-nutri-orange font-bold">₱54.00</p>
+                      </div>
+                      <div className="bg-nutri-orange/10 rounded-lg p-2 group-hover:bg-nutri-orange/20 transition-colors">
+                        <span className="text-nutri-orange font-medium">Grande</span>
+                        <p className="text-nutri-green font-bold">₱64.00</p>
+                      </div>
+                    </div>
                     <Link to="/products/cucumber">
                       <Button 
                         variant="outline" 
@@ -419,6 +452,17 @@ const Index = () => {
                     <p className="text-gray-600 my-3 text-sm">
                       A naturally sweet flavor packed with antioxidants.
                     </p>
+                    {/* Price Display */}
+                    <div className="flex justify-center gap-4 mb-4">
+                      <div className="bg-nutri-green/10 rounded-lg p-2 group-hover:bg-nutri-green/20 transition-colors">
+                        <span className="text-nutri-green font-medium">Regular</span>
+                        <p className="text-nutri-orange font-bold">₱54.00</p>
+                      </div>
+                      <div className="bg-nutri-orange/10 rounded-lg p-2 group-hover:bg-nutri-orange/20 transition-colors">
+                        <span className="text-nutri-orange font-medium">Grande</span>
+                        <p className="text-nutri-green font-bold">₱64.00</p>
+                      </div>
+                    </div>
                     <Link to="/products/sweet-potato">
                       <Button 
                         variant="outline" 
