@@ -253,20 +253,20 @@ const Index = () => {
                 {/* Carrot Flavor */}
                 <div className="group relative flex flex-col items-center">
                   <div className="relative mb-6 w-48 h-48 rounded-full overflow-hidden border-8 border-nutri-orange/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl flex items-center justify-center">
-                    <img 
-                      src={`${import.meta.env.BASE_URL}assets/images/carrot.png`}
-                      alt="Carrot"
-                      className="w-32 h-32 object-contain"
-                    />
-                    {/* Scoop Handle - Decorative Element */}
-                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-12 bg-nutri-beige/80 rounded-b-full"></div>
-                    
-                    {/* Hover Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-nutri-orange/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                      <div className="bg-white/90 rounded-full py-2 px-6 transform -translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
-                        <span className="text-nutri-orange font-bold">Popular</span>
+                    {/* Background color */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-orange-100"></div>
+                    {/* Product Image */}
+                    <div className="relative p-4 w-full h-full flex items-center justify-center">
+                      <div className="aspect-square rounded-xl overflow-hidden bg-white/40 backdrop-blur-sm p-2">
+                        <img
+                          src={`${import.meta.env.BASE_URL}images/carrot.png`}
+                          alt="Carrot"
+                          className="h-full w-full object-contain transition-transform duration-500 drop-shadow-md group-hover:scale-110"
+                        />
                       </div>
                     </div>
+                    {/* Scoop Handle */}
+                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-12 bg-nutri-beige/80 rounded-b-full"></div>
                   </div>
                   
                   {/* Product Info */}
@@ -291,20 +291,20 @@ const Index = () => {
                 {/* Corn Flavor */}
                 <div className="group relative flex flex-col items-center">
                   <div className="relative mb-6 w-48 h-48 rounded-full overflow-hidden border-8 border-nutri-green/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl flex items-center justify-center">
-                    <img 
-                      src={`${import.meta.env.BASE_URL}assets/images/corn.png`}
-                      alt="Corn"
-                      className="w-32 h-32 object-contain"
-                    />
-                    {/* Scoop Handle */}
-                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-12 bg-nutri-beige/80 rounded-b-full"></div>
-                    
-                    {/* Hover Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-nutri-green/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                      <div className="bg-white/90 rounded-full py-2 px-6 transform -translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
-                        <span className="text-nutri-green font-bold">New</span>
+                    {/* Background color */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-yellow-50 to-yellow-100"></div>
+                    {/* Product Image */}
+                    <div className="relative p-4 w-full h-full flex items-center justify-center">
+                      <div className="aspect-square rounded-xl overflow-hidden bg-white/40 backdrop-blur-sm p-2">
+                        <img
+                          src={`${import.meta.env.BASE_URL}images/corn.png`}
+                          alt="Corn"
+                          className="h-full w-full object-contain transition-transform duration-500 drop-shadow-md group-hover:scale-110"
+                        />
                       </div>
                     </div>
+                    {/* Scoop Handle */}
+                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-12 bg-nutri-beige/80 rounded-b-full"></div>
                   </div>
                   
                   {/* Product Info */}
@@ -329,20 +329,20 @@ const Index = () => {
                 {/* Cucumber Flavor */}
                 <div className="group relative flex flex-col items-center">
                   <div className="relative mb-6 w-48 h-48 rounded-full overflow-hidden border-8 border-nutri-green/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl flex items-center justify-center">
-                    <img 
-                      src={`${import.meta.env.BASE_URL}assets/images/cucumber.png`}
-                      alt="Cucumber"
-                      className="w-32 h-32 object-contain"
-                    />
-                    {/* Scoop Handle */}
-                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-12 bg-nutri-beige/80 rounded-b-full"></div>
-                    
-                    {/* Hover Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-nutri-green/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                      <div className="bg-white/90 rounded-full py-2 px-6 transform -translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
-                        <span className="text-nutri-green font-bold">Refreshing</span>
+                    {/* Background color */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-green-100"></div>
+                    {/* Product Image */}
+                    <div className="relative p-4 w-full h-full flex items-center justify-center">
+                      <div className="aspect-square rounded-xl overflow-hidden bg-white/40 backdrop-blur-sm p-2">
+                        <img
+                          src={`${import.meta.env.BASE_URL}images/cucumber.png`}
+                          alt="Cucumber"
+                          className="h-full w-full object-contain transition-transform duration-500 drop-shadow-md group-hover:scale-110"
+                        />
                       </div>
                     </div>
+                    {/* Scoop Handle */}
+                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-12 bg-nutri-beige/80 rounded-b-full"></div>
                   </div>
                   
                   {/* Product Info */}
@@ -367,20 +367,20 @@ const Index = () => {
                 {/* Sweet Potato Flavor */}
                 <div className="group relative flex flex-col items-center">
                   <div className="relative mb-6 w-48 h-48 rounded-full overflow-hidden border-8 border-nutri-orange/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl flex items-center justify-center">
-                    <img 
-                      src={`${import.meta.env.BASE_URL}assets/images/sweet_potato.png`}
-                      alt="Sweet Potato"
-                      className="w-32 h-32 object-contain"
-                    />
-                    {/* Scoop Handle */}
-                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-12 bg-nutri-beige/80 rounded-b-full"></div>
-                    
-                    {/* Hover Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-nutri-orange/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                      <div className="bg-white/90 rounded-full py-2 px-6 transform -translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
-                        <span className="text-nutri-orange font-bold">Best Seller</span>
+                    {/* Background color */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-amber-50 to-amber-100"></div>
+                    {/* Product Image */}
+                    <div className="relative p-4 w-full h-full flex items-center justify-center">
+                      <div className="aspect-square rounded-xl overflow-hidden bg-white/40 backdrop-blur-sm p-2">
+                        <img
+                          src={`${import.meta.env.BASE_URL}images/sweet_potato.png`}
+                          alt="Sweet Potato"
+                          className="h-full w-full object-contain transition-transform duration-500 drop-shadow-md group-hover:scale-110"
+                        />
                       </div>
                     </div>
+                    {/* Scoop Handle */}
+                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-12 bg-nutri-beige/80 rounded-b-full"></div>
                   </div>
                   
                   {/* Product Info */}
