@@ -20,7 +20,7 @@ const Index = () => {
       {/* Hero Section - Full Screen */}
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
         {/* Decorative Background Elements */}
-        <div className="absolute inset-0 bg-[url('/images/nutriscoop background.jpg')] bg-cover bg-center opacity-5"></div>
+        <div className="absolute inset-0 bg-[url('${import.meta.env.BASE_URL}images/nutriscoop background.jpg')] bg-cover bg-center opacity-5"></div>
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-nutri-orange/10 rounded-full blur-3xl"></div>
         <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-nutri-green/10 rounded-full blur-3xl"></div>
         <div className="absolute top-1/3 right-1/3 w-16 h-16 bg-nutri-green/20 rounded-full blur-lg"></div>
@@ -251,12 +251,12 @@ const Index = () => {
               {/* Product Grid Layout */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
                 {/* Carrot Flavor */}
-                <div className="group relative">
-                  <div className="relative mb-6 aspect-square rounded-full overflow-hidden border-8 border-nutri-orange/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl">
+                <div className="group relative flex flex-col items-center">
+                  <div className="relative mb-6 w-48 h-48 rounded-full overflow-hidden border-8 border-nutri-orange/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl flex items-center justify-center">
                     <img 
-                      src="/images/carrot.png" 
-                      alt="Carrot Flavor Ice Cream" 
-                      className="w-full h-full object-cover"
+                      src={`${import.meta.env.BASE_URL}images/carrot.png`}
+                      alt="Carrot"
+                      className="w-32 h-32 object-contain"
                     />
                     {/* Scoop Handle - Decorative Element */}
                     <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-12 bg-nutri-beige/80 rounded-b-full"></div>
@@ -289,12 +289,12 @@ const Index = () => {
                 </div>
                 
                 {/* Corn Flavor */}
-                <div className="group relative">
-                  <div className="relative mb-6 aspect-square rounded-full overflow-hidden border-8 border-nutri-green/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl">
+                <div className="group relative flex flex-col items-center">
+                  <div className="relative mb-6 w-48 h-48 rounded-full overflow-hidden border-8 border-nutri-green/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl flex items-center justify-center">
                     <img 
-                      src="/images/corn.png" 
-                      alt="Corn Flavor Ice Cream" 
-                      className="w-full h-full object-cover"
+                      src={`${import.meta.env.BASE_URL}images/corn.png`}
+                      alt="Corn"
+                      className="w-32 h-32 object-contain"
                     />
                     {/* Scoop Handle */}
                     <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-12 bg-nutri-beige/80 rounded-b-full"></div>
@@ -327,12 +327,12 @@ const Index = () => {
                 </div>
                 
                 {/* Cucumber Flavor */}
-                <div className="group relative">
-                  <div className="relative mb-6 aspect-square rounded-full overflow-hidden border-8 border-nutri-green/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl">
+                <div className="group relative flex flex-col items-center">
+                  <div className="relative mb-6 w-48 h-48 rounded-full overflow-hidden border-8 border-nutri-green/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl flex items-center justify-center">
                     <img 
-                      src="/images/cucumber.png" 
-                      alt="Cucumber Flavor Ice Cream" 
-                      className="w-full h-full object-cover"
+                      src={`${import.meta.env.BASE_URL}images/cucumber.png`}
+                      alt="Cucumber"
+                      className="w-32 h-32 object-contain"
                     />
                     {/* Scoop Handle */}
                     <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-12 bg-nutri-beige/80 rounded-b-full"></div>
@@ -365,12 +365,12 @@ const Index = () => {
                 </div>
                 
                 {/* Sweet Potato Flavor */}
-                <div className="group relative">
-                  <div className="relative mb-6 aspect-square rounded-full overflow-hidden border-8 border-nutri-orange/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl">
+                <div className="group relative flex flex-col items-center">
+                  <div className="relative mb-6 w-48 h-48 rounded-full overflow-hidden border-8 border-nutri-orange/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl flex items-center justify-center">
                     <img 
-                      src="/images/sweet_potato.png" 
-                      alt="Sweet Potato Flavor Ice Cream" 
-                      className="w-full h-full object-cover"
+                      src={`${import.meta.env.BASE_URL}images/sweet_potato.png`}
+                      alt="Sweet Potato"
+                      className="w-32 h-32 object-contain"
                     />
                     {/* Scoop Handle */}
                     <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-12 bg-nutri-beige/80 rounded-b-full"></div>
@@ -548,14 +548,14 @@ const Index = () => {
             {/* Brand Column */}
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <div className="bg-white rounded-full p-1">
+                <div className="bg-white rounded-full p-2">
                   <img 
-                    src="/images/nutriscoop_logo.png" 
-                    alt="NutriScoop Logo" 
-                    className="h-10 w-10 object-contain"
+                    src={`${import.meta.env.BASE_URL}images/nutriscoop_logo.png`}
+                    alt="NutriScoop"
+                    className="h-12 w-auto"
                   />
                 </div>
-                <span className="font-bold text-2xl">NutriScoop</span>
+                <span className="font-bold text-2xl text-white">NutriScoop</span>
               </div>
               <p className="text-nutri-green-100 mb-4 max-w-xs">
                 Delicious plant-based ice cream crafted with natural ingredients for a healthier, tastier alternative.
