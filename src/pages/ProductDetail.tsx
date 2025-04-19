@@ -87,7 +87,7 @@ const ProductDetail = () => {
                 <div className="p-8 md:p-12 flex items-center justify-center h-full">
                   <div className={`relative aspect-square w-full max-w-md mx-auto transition-opacity duration-700 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}>
                     <img
-                      src={`/images/${product.id.replace('-', '_')}.png`}
+                      src={`${import.meta.env.BASE_URL}images/${product.id.replace('-', '_')}.png`}
                       alt={product.title}
                       className="h-full w-full object-contain drop-shadow-lg"
                       onLoad={() => setImageLoaded(true)}
@@ -206,7 +206,7 @@ const ProductDetail = () => {
                     </div>
                     
                     <img
-                      src={`/images/${relatedProduct.id.replace('-', '_')}.png`}
+                      src={`${import.meta.env.BASE_URL}images/${relatedProduct.id.replace('-', '_')}.png`}
                       alt={relatedProduct.title}
                       className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110 drop-shadow-md"
                     />
@@ -234,7 +234,14 @@ const ProductDetail = () => {
       {/* Footer */}
       <footer className="bg-nutri-green text-white relative overflow-hidden">
         {/* Background Elements */}
-        <div className="absolute inset-0 bg-[url('/images/nutriscoop\ background.jpg')] bg-cover bg-center opacity-5"></div>
+        <div 
+          className="absolute inset-0 opacity-5"
+          style={{
+            backgroundImage: `url('${import.meta.env.BASE_URL}images/nutriscoop background.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        ></div>
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-nutri-orange/10 rounded-full blur-3xl"></div>
         <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-nutri-green-dark/20 rounded-full blur-3xl"></div>
         
@@ -244,7 +251,7 @@ const ProductDetail = () => {
             {/* Logo and Tagline */}
             <div>
               <div className="flex items-center mb-6">
-                <img src="/images/nutriscoop_logo.png" alt="NutriScoop" className="h-16 w-auto mr-3" />
+                <img src={`${import.meta.env.BASE_URL}images/nutriscoop_logo.png`} alt="NutriScoop" className="h-16 w-auto mr-3" />
                 <div>
                   <h2 className="text-2xl font-bold">NutriScoop</h2>
                   <p className="text-nutri-green-100">Vegan Ice Cream</p>

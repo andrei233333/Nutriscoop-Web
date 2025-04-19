@@ -76,8 +76,8 @@ const Products = () => {
                       <div className="p-4">
                         <div className="aspect-square rounded-xl overflow-hidden bg-white/40 backdrop-blur-sm p-2">
                           <img
-                            src={`/images/${product.id.replace('-', '_')}.png`}
-                    alt={product.title}
+                            src={`${import.meta.env.BASE_URL}images/${product.id.replace('-', '_')}.png`}
+                            alt={product.title}
                             className={`h-full w-full object-contain transition-transform duration-500 drop-shadow-md ${
                               hoveredProduct === product.id ? 'scale-110' : 'scale-100'
                             }`}
@@ -182,7 +182,7 @@ const Products = () => {
               </div>
               <div className="md:col-span-2 bg-nutri-green p-8 flex items-center justify-center">
                 <div className="text-center text-white">
-                  <img src="/images/nutriscoop_logo.png" alt="NutriScoop" className="h-24 w-auto mx-auto mb-4" />
+                  <img src={`${import.meta.env.BASE_URL}images/nutriscoop_logo.png`} alt="NutriScoop" className="h-24 w-auto mx-auto mb-4" />
                   <h4 className="text-xl font-bold mb-2">NutriScoop</h4>
                   <p className="text-white/80">
                     Where Health Meets Pleasure
@@ -197,7 +197,7 @@ const Products = () => {
       {/* Footer */}
       <footer className="bg-nutri-green text-white relative overflow-hidden mt-8">
         {/* Background Elements */}
-        <div className="absolute inset-0 bg-[url('/images/nutriscoop\ background.jpg')] bg-cover bg-center opacity-5"></div>
+        <div className="absolute inset-0 bg-[url('${import.meta.env.BASE_URL}images/nutriscoop background.jpg')] bg-cover bg-center opacity-5"></div>
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-nutri-orange/10 rounded-full blur-3xl"></div>
         <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-nutri-green-dark/20 rounded-full blur-3xl"></div>
         
@@ -207,7 +207,7 @@ const Products = () => {
             {/* Logo and Tagline */}
             <div>
               <div className="flex items-center mb-6">
-                <img src="/images/nutriscoop_logo.png" alt="NutriScoop" className="h-16 w-auto mr-3" />
+                <img src={`${import.meta.env.BASE_URL}images/nutriscoop_logo.png`} alt="NutriScoop" className="h-16 w-auto mr-3" />
                 <div>
                   <h2 className="text-2xl font-bold">NutriScoop</h2>
                   <p className="text-nutri-green-100">Vegan Ice Cream</p>
