@@ -30,12 +30,16 @@ export default defineConfig(({ command, mode }) => ({
     rollupOptions: {
       output: {
         assetFileNames: (assetInfo) => {
-          const name = assetInfo.name;
-          if (name && (name.endsWith('.png') || name.endsWith('.jpg') || name.endsWith('.jpeg'))) {
-            return 'images/[name][extname]';
+          if (assetInfo.name) {
+            const info = assetInfo.name.split('.');
+            let extType = info[info.length - 1];
+            if (/\.(png|jpe?g|svg|gif|bmp|webp)$/i.test(assetInfo.name)) {
+              return `images/[name][extname]`;
+            }
+            return `assets/[name][extname]`;
           }
-          return 'assets/[name][extname]';
-        }
+          return 'assets/[name]-[hash][extname]';
+        },
       }
     }
   },

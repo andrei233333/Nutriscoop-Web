@@ -4,7 +4,7 @@ import { ProductCard } from "@/components/ProductCard";
 import { Facebook, Instagram, Mail, MapPin, Clock, Star, Heart, Leaf, ArrowRight, Check, ShoppingBag, IceCream, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
-import Footer from "@/components/Footer";
+import Footer from '../components/Footer';
 
 const Index = () => {
   const location = useLocation();
@@ -21,7 +21,14 @@ const Index = () => {
       {/* Hero Section - Full Screen */}
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
         {/* Decorative Background Elements */}
-        <div className="absolute inset-0 bg-[url('/Nutriscoop-Web/images/nutriscoop background.jpg')] bg-cover bg-center opacity-5"></div>
+        <div 
+          className="absolute inset-0 opacity-5"
+          style={{
+            backgroundImage: `url('${import.meta.env.BASE_URL || ''}images/nutriscoop background.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        ></div>
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-nutri-orange/10 rounded-full blur-3xl"></div>
         <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-nutri-green/10 rounded-full blur-3xl"></div>
         <div className="absolute top-1/3 right-1/3 w-16 h-16 bg-nutri-green/20 rounded-full blur-lg"></div>
@@ -263,9 +270,9 @@ const Index = () => {
                     <div className="relative p-4 w-full h-full flex items-center justify-center">
                       <div className="aspect-square rounded-xl overflow-hidden">
                         <img
-                          src={`${import.meta.env.BASE_URL}images/carrot.png`}
+                          src={`${import.meta.env.BASE_URL || ''}images/carrot.png`}
                           alt="Carrot"
-                          className="h-full w-full object-contain transition-all duration-500 drop-shadow-md group-hover:scale-110 group-hover:rotate-2"
+                          className="w-32 h-32 object-contain"
                         />
                       </div>
                     </div>
@@ -319,9 +326,9 @@ const Index = () => {
                     <div className="relative p-4 w-full h-full flex items-center justify-center">
                       <div className="aspect-square rounded-xl overflow-hidden">
                         <img
-                          src={`${import.meta.env.BASE_URL}images/corn.png`}
+                          src={`${import.meta.env.BASE_URL || ''}images/corn.png`}
                           alt="Corn"
-                          className="h-full w-full object-contain transition-all duration-500 drop-shadow-md group-hover:scale-110 group-hover:rotate-2"
+                          className="w-32 h-32 object-contain"
                         />
                       </div>
                     </div>
@@ -375,9 +382,9 @@ const Index = () => {
                     <div className="relative p-4 w-full h-full flex items-center justify-center">
                       <div className="aspect-square rounded-xl overflow-hidden">
                         <img
-                          src={`${import.meta.env.BASE_URL}images/cucumber.png`}
+                          src={`${import.meta.env.BASE_URL || ''}images/cucumber.png`}
                           alt="Cucumber"
-                          className="h-full w-full object-contain transition-all duration-500 drop-shadow-md group-hover:scale-110 group-hover:rotate-2"
+                          className="w-32 h-32 object-contain"
                         />
                       </div>
                     </div>
@@ -431,9 +438,9 @@ const Index = () => {
                     <div className="relative p-4 w-full h-full flex items-center justify-center">
                       <div className="aspect-square rounded-xl overflow-hidden">
                         <img
-                          src={`${import.meta.env.BASE_URL}images/sweet_potato.png`}
+                          src={`${import.meta.env.BASE_URL || ''}images/sweet_potato.png`}
                           alt="Sweet Potato"
-                          className="h-full w-full object-contain transition-all duration-500 drop-shadow-md group-hover:scale-110 group-hover:rotate-2"
+                          className="w-32 h-32 object-contain"
                         />
                       </div>
                     </div>
