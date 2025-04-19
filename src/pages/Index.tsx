@@ -254,7 +254,7 @@ const Index = () => {
                 <div className="group relative flex flex-col items-center">
                   <div className="relative mb-6 w-48 h-48 rounded-full overflow-hidden border-8 border-nutri-orange/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl flex items-center justify-center">
                     <img 
-                      src={`${import.meta.env.BASE_URL}images/carrot.png`}
+                      src={`${import.meta.env.BASE_URL}assets/images/carrot.png`}
                       alt="Carrot"
                       className="w-32 h-32 object-contain"
                     />
@@ -292,7 +292,7 @@ const Index = () => {
                 <div className="group relative flex flex-col items-center">
                   <div className="relative mb-6 w-48 h-48 rounded-full overflow-hidden border-8 border-nutri-green/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl flex items-center justify-center">
                     <img 
-                      src={`${import.meta.env.BASE_URL}images/corn.png`}
+                      src={`${import.meta.env.BASE_URL}assets/images/corn.png`}
                       alt="Corn"
                       className="w-32 h-32 object-contain"
                     />
@@ -330,7 +330,7 @@ const Index = () => {
                 <div className="group relative flex flex-col items-center">
                   <div className="relative mb-6 w-48 h-48 rounded-full overflow-hidden border-8 border-nutri-green/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl flex items-center justify-center">
                     <img 
-                      src={`${import.meta.env.BASE_URL}images/cucumber.png`}
+                      src={`${import.meta.env.BASE_URL}assets/images/cucumber.png`}
                       alt="Cucumber"
                       className="w-32 h-32 object-contain"
                     />
@@ -368,7 +368,7 @@ const Index = () => {
                 <div className="group relative flex flex-col items-center">
                   <div className="relative mb-6 w-48 h-48 rounded-full overflow-hidden border-8 border-nutri-orange/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl flex items-center justify-center">
                     <img 
-                      src={`${import.meta.env.BASE_URL}images/sweet_potato.png`}
+                      src={`${import.meta.env.BASE_URL}assets/images/sweet_potato.png`}
                       alt="Sweet Potato"
                       className="w-32 h-32 object-contain"
                     />
@@ -550,7 +550,7 @@ const Index = () => {
               <div className="flex items-center gap-3 mb-4">
                 <div className="bg-white rounded-full p-2">
                   <img 
-                    src={`${import.meta.env.BASE_URL}images/nutriscoop_logo.png`}
+                    src={`${import.meta.env.BASE_URL}assets/images/nutriscoop_logo.png`}
                     alt="NutriScoop"
                     className="h-12 w-auto"
                   />
