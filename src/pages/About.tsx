@@ -61,7 +61,7 @@ const About = () => {
                 <div className="relative overflow-hidden md:col-span-3">
                   <div className="absolute inset-0 bg-gradient-to-r from-nutri-green/30 to-nutri-orange/30 opacity-30 mix-blend-overlay"></div>
                   <img 
-                    src="/images/staff.png" 
+                    src={`${import.meta.env.BASE_URL}images/staff.png`}
                     alt="NutriScoop Store" 
                     className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
                   />
@@ -239,7 +239,14 @@ const About = () => {
       {/* Footer */}
       <footer className="bg-nutri-green text-white relative overflow-hidden mt-16">
         {/* Background Elements */}
-        <div className="absolute inset-0 bg-[url('/images/nutriscoop\ background.jpg')] bg-cover bg-center opacity-5"></div>
+        <div 
+          className="absolute inset-0 opacity-5"
+          style={{
+            backgroundImage: `url('${import.meta.env.BASE_URL}images/nutriscoop background.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        ></div>
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-nutri-orange/10 rounded-full blur-3xl"></div>
         <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-nutri-green-dark/20 rounded-full blur-3xl"></div>
         
