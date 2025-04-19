@@ -20,7 +20,7 @@ const Index = () => {
       {/* Hero Section - Full Screen */}
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
         {/* Decorative Background Elements */}
-        <div className="absolute inset-0 bg-[url('/assets/images/nutriscoop background.jpg')] bg-cover bg-center opacity-5"></div>
+        <div className="absolute inset-0 bg-[url('/images/nutriscoop background.jpg')] bg-cover bg-center opacity-5"></div>
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-nutri-orange/10 rounded-full blur-3xl"></div>
         <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-nutri-green/10 rounded-full blur-3xl"></div>
         <div className="absolute top-1/3 right-1/3 w-16 h-16 bg-nutri-green/20 rounded-full blur-lg"></div>
@@ -254,7 +254,7 @@ const Index = () => {
                 <div className="group relative">
                   <div className="relative mb-6 aspect-square rounded-full overflow-hidden border-8 border-nutri-orange/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl">
                     <img 
-                      src={`${import.meta.env.BASE_URL}assets/images/carrot.png`} 
+                      src="/images/carrot.png" 
                       alt="Carrot Flavor Ice Cream" 
                       className="w-full h-full object-cover"
                     />
@@ -292,7 +292,7 @@ const Index = () => {
                 <div className="group relative">
                   <div className="relative mb-6 aspect-square rounded-full overflow-hidden border-8 border-nutri-green/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl">
                     <img 
-                      src={`${import.meta.env.BASE_URL}assets/images/corn.png`} 
+                      src="/images/corn.png" 
                       alt="Corn Flavor Ice Cream" 
                       className="w-full h-full object-cover"
                     />
@@ -330,7 +330,7 @@ const Index = () => {
                 <div className="group relative">
                   <div className="relative mb-6 aspect-square rounded-full overflow-hidden border-8 border-nutri-green/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl">
                     <img 
-                      src={`${import.meta.env.BASE_URL}assets/images/cucumber.png`} 
+                      src="/images/cucumber.png" 
                       alt="Cucumber Flavor Ice Cream" 
                       className="w-full h-full object-cover"
                     />
@@ -368,7 +368,7 @@ const Index = () => {
                 <div className="group relative">
                   <div className="relative mb-6 aspect-square rounded-full overflow-hidden border-8 border-nutri-orange/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl">
                     <img 
-                      src={`${import.meta.env.BASE_URL}assets/images/sweet_potato.png`} 
+                      src="/images/sweet_potato.png" 
                       alt="Sweet Potato Flavor Ice Cream" 
                       className="w-full h-full object-cover"
                     />
@@ -550,7 +550,7 @@ const Index = () => {
               <div className="flex items-center gap-3 mb-4">
                 <div className="bg-white rounded-full p-1">
                   <img 
-                    src={`${import.meta.env.BASE_URL}assets/images/nutriscoop_logo.png`} 
+                    src="/images/nutriscoop_logo.png" 
                     alt="NutriScoop Logo" 
                     className="h-10 w-10 object-contain"
                   />
