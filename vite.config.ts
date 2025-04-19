@@ -32,7 +32,7 @@ export default defineConfig(({ command, mode }) => ({
         assetFileNames: (assetInfo) => {
           const name = assetInfo.name;
           if (name && (name.endsWith('.png') || name.endsWith('.jpg') || name.endsWith('.jpeg'))) {
-            return 'assets/images/[name][extname]';
+            return 'images/[name][extname]';
           }
           return 'assets/[name][extname]';
         }
