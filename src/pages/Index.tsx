@@ -252,26 +252,33 @@ const Index = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
                 {/* Carrot Flavor */}
                 <div className="group relative flex flex-col items-center">
-                  <div className="relative mb-6 w-48 h-48 rounded-full overflow-hidden border-8 border-nutri-orange/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl flex items-center justify-center">
-                    {/* Background color */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-orange-100"></div>
+                  <div className="relative mb-6 w-48 h-48 rounded-full overflow-hidden border-8 border-nutri-orange/10 shadow-lg transform transition-all duration-500 group-hover:scale-105 group-hover:shadow-xl flex items-center justify-center hover:border-nutri-orange/30">
+                    {/* Background color with gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-orange-50 via-orange-100 to-orange-50 group-hover:from-orange-100 group-hover:to-orange-50 transition-colors duration-500"></div>
+                    {/* Decorative elements */}
+                    <div className="absolute top-0 right-0 w-16 h-16 bg-white/30 rounded-bl-full transform group-hover:scale-110 transition-transform duration-500"></div>
+                    <div className="absolute bottom-0 left-0 w-16 h-16 bg-white/30 rounded-tr-full transform group-hover:scale-110 transition-transform duration-500"></div>
                     {/* Product Image */}
                     <div className="relative p-4 w-full h-full flex items-center justify-center">
-                      <div className="aspect-square rounded-xl overflow-hidden bg-white/40 backdrop-blur-sm p-2">
+                      <div className="aspect-square rounded-xl overflow-hidden">
                         <img
                           src={`${import.meta.env.BASE_URL}images/carrot.png`}
                           alt="Carrot"
-                          className="h-full w-full object-contain transition-transform duration-500 drop-shadow-md group-hover:scale-110"
+                          className="h-full w-full object-contain transition-all duration-500 drop-shadow-md group-hover:scale-110 group-hover:rotate-2"
                         />
                       </div>
                     </div>
-                    {/* Scoop Handle */}
-                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-12 bg-nutri-beige/80 rounded-b-full"></div>
+                    {/* Scoop Handle with enhanced effect */}
+                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-12 bg-gradient-to-b from-nutri-beige/80 to-nutri-beige/60 rounded-b-full group-hover:scale-110 transition-transform duration-500"></div>
+                    {/* Hover label */}
+                    <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/90 px-4 py-1 rounded-full text-nutri-orange font-medium text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      Popular Choice
+                    </div>
                   </div>
                   
-                  {/* Product Info */}
+                  {/* Product Info with enhanced styling */}
                   <div className="text-center">
-                    <h3 className="text-xl font-bold text-nutri-green group-hover:text-nutri-orange transition-colors">
+                    <h3 className="text-xl font-bold text-nutri-green group-hover:text-nutri-orange transition-colors duration-300">
                       Carrot Flavor
                     </h3>
                     <p className="text-gray-600 my-3 text-sm">
@@ -280,7 +287,7 @@ const Index = () => {
                     <Link to="/products/carrot">
                       <Button 
                         variant="outline" 
-                        className="rounded-full border-nutri-orange border-2 text-nutri-orange hover:bg-nutri-orange hover:text-white transition-colors duration-300"
+                        className="rounded-full border-nutri-orange border-2 text-nutri-orange hover:bg-nutri-orange hover:text-white transition-all duration-300 hover:scale-105"
                       >
                         Try This Flavor
                       </Button>
@@ -290,26 +297,33 @@ const Index = () => {
                 
                 {/* Corn Flavor */}
                 <div className="group relative flex flex-col items-center">
-                  <div className="relative mb-6 w-48 h-48 rounded-full overflow-hidden border-8 border-nutri-green/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl flex items-center justify-center">
-                    {/* Background color */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-yellow-50 to-yellow-100"></div>
+                  <div className="relative mb-6 w-48 h-48 rounded-full overflow-hidden border-8 border-nutri-green/10 shadow-lg transform transition-all duration-500 group-hover:scale-105 group-hover:shadow-xl flex items-center justify-center hover:border-nutri-green/30">
+                    {/* Background color with gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-yellow-50 via-yellow-100 to-yellow-50 group-hover:from-yellow-100 group-hover:to-yellow-50 transition-colors duration-500"></div>
+                    {/* Decorative elements */}
+                    <div className="absolute top-0 right-0 w-16 h-16 bg-white/30 rounded-bl-full transform group-hover:scale-110 transition-transform duration-500"></div>
+                    <div className="absolute bottom-0 left-0 w-16 h-16 bg-white/30 rounded-tr-full transform group-hover:scale-110 transition-transform duration-500"></div>
                     {/* Product Image */}
                     <div className="relative p-4 w-full h-full flex items-center justify-center">
-                      <div className="aspect-square rounded-xl overflow-hidden bg-white/40 backdrop-blur-sm p-2">
+                      <div className="aspect-square rounded-xl overflow-hidden">
                         <img
                           src={`${import.meta.env.BASE_URL}images/corn.png`}
                           alt="Corn"
-                          className="h-full w-full object-contain transition-transform duration-500 drop-shadow-md group-hover:scale-110"
+                          className="h-full w-full object-contain transition-all duration-500 drop-shadow-md group-hover:scale-110 group-hover:rotate-2"
                         />
                       </div>
                     </div>
-                    {/* Scoop Handle */}
-                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-12 bg-nutri-beige/80 rounded-b-full"></div>
+                    {/* Scoop Handle with enhanced effect */}
+                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-12 bg-gradient-to-b from-nutri-beige/80 to-nutri-beige/60 rounded-b-full group-hover:scale-110 transition-transform duration-500"></div>
+                    {/* Hover label */}
+                    <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/90 px-4 py-1 rounded-full text-nutri-green font-medium text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      New Flavor
+                    </div>
                   </div>
                   
-                  {/* Product Info */}
+                  {/* Product Info with enhanced styling */}
                   <div className="text-center">
-                    <h3 className="text-xl font-bold text-nutri-green group-hover:text-nutri-orange transition-colors">
+                    <h3 className="text-xl font-bold text-nutri-green group-hover:text-nutri-orange transition-colors duration-300">
                       Corn Flavor
                     </h3>
                     <p className="text-gray-600 my-3 text-sm">
@@ -318,7 +332,7 @@ const Index = () => {
                     <Link to="/products/corn">
                       <Button 
                         variant="outline" 
-                        className="rounded-full border-nutri-orange border-2 text-nutri-orange hover:bg-nutri-orange hover:text-white transition-colors duration-300"
+                        className="rounded-full border-nutri-orange border-2 text-nutri-orange hover:bg-nutri-orange hover:text-white transition-all duration-300 hover:scale-105"
                       >
                         Try This Flavor
                       </Button>
@@ -328,26 +342,33 @@ const Index = () => {
                 
                 {/* Cucumber Flavor */}
                 <div className="group relative flex flex-col items-center">
-                  <div className="relative mb-6 w-48 h-48 rounded-full overflow-hidden border-8 border-nutri-green/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl flex items-center justify-center">
-                    {/* Background color */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-green-100"></div>
+                  <div className="relative mb-6 w-48 h-48 rounded-full overflow-hidden border-8 border-nutri-green/10 shadow-lg transform transition-all duration-500 group-hover:scale-105 group-hover:shadow-xl flex items-center justify-center hover:border-nutri-green/30">
+                    {/* Background color with gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-green-50 via-green-100 to-green-50 group-hover:from-green-100 group-hover:to-green-50 transition-colors duration-500"></div>
+                    {/* Decorative elements */}
+                    <div className="absolute top-0 right-0 w-16 h-16 bg-white/30 rounded-bl-full transform group-hover:scale-110 transition-transform duration-500"></div>
+                    <div className="absolute bottom-0 left-0 w-16 h-16 bg-white/30 rounded-tr-full transform group-hover:scale-110 transition-transform duration-500"></div>
                     {/* Product Image */}
                     <div className="relative p-4 w-full h-full flex items-center justify-center">
-                      <div className="aspect-square rounded-xl overflow-hidden bg-white/40 backdrop-blur-sm p-2">
+                      <div className="aspect-square rounded-xl overflow-hidden">
                         <img
                           src={`${import.meta.env.BASE_URL}images/cucumber.png`}
                           alt="Cucumber"
-                          className="h-full w-full object-contain transition-transform duration-500 drop-shadow-md group-hover:scale-110"
+                          className="h-full w-full object-contain transition-all duration-500 drop-shadow-md group-hover:scale-110 group-hover:rotate-2"
                         />
                       </div>
                     </div>
-                    {/* Scoop Handle */}
-                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-12 bg-nutri-beige/80 rounded-b-full"></div>
+                    {/* Scoop Handle with enhanced effect */}
+                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-12 bg-gradient-to-b from-nutri-beige/80 to-nutri-beige/60 rounded-b-full group-hover:scale-110 transition-transform duration-500"></div>
+                    {/* Hover label */}
+                    <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/90 px-4 py-1 rounded-full text-nutri-green font-medium text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      Refreshing
+                    </div>
                   </div>
                   
-                  {/* Product Info */}
+                  {/* Product Info with enhanced styling */}
                   <div className="text-center">
-                    <h3 className="text-xl font-bold text-nutri-green group-hover:text-nutri-orange transition-colors">
+                    <h3 className="text-xl font-bold text-nutri-green group-hover:text-nutri-orange transition-colors duration-300">
                       Cucumber Flavor
                     </h3>
                     <p className="text-gray-600 my-3 text-sm">
@@ -356,7 +377,7 @@ const Index = () => {
                     <Link to="/products/cucumber">
                       <Button 
                         variant="outline" 
-                        className="rounded-full border-nutri-orange border-2 text-nutri-orange hover:bg-nutri-orange hover:text-white transition-colors duration-300"
+                        className="rounded-full border-nutri-orange border-2 text-nutri-orange hover:bg-nutri-orange hover:text-white transition-all duration-300 hover:scale-105"
                       >
                         Try This Flavor
                       </Button>
@@ -366,26 +387,33 @@ const Index = () => {
                 
                 {/* Sweet Potato Flavor */}
                 <div className="group relative flex flex-col items-center">
-                  <div className="relative mb-6 w-48 h-48 rounded-full overflow-hidden border-8 border-nutri-orange/10 shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl flex items-center justify-center">
-                    {/* Background color */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-amber-50 to-amber-100"></div>
+                  <div className="relative mb-6 w-48 h-48 rounded-full overflow-hidden border-8 border-nutri-orange/10 shadow-lg transform transition-all duration-500 group-hover:scale-105 group-hover:shadow-xl flex items-center justify-center hover:border-nutri-orange/30">
+                    {/* Background color with gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-amber-100 to-amber-50 group-hover:from-amber-100 group-hover:to-amber-50 transition-colors duration-500"></div>
+                    {/* Decorative elements */}
+                    <div className="absolute top-0 right-0 w-16 h-16 bg-white/30 rounded-bl-full transform group-hover:scale-110 transition-transform duration-500"></div>
+                    <div className="absolute bottom-0 left-0 w-16 h-16 bg-white/30 rounded-tr-full transform group-hover:scale-110 transition-transform duration-500"></div>
                     {/* Product Image */}
                     <div className="relative p-4 w-full h-full flex items-center justify-center">
-                      <div className="aspect-square rounded-xl overflow-hidden bg-white/40 backdrop-blur-sm p-2">
+                      <div className="aspect-square rounded-xl overflow-hidden">
                         <img
                           src={`${import.meta.env.BASE_URL}images/sweet_potato.png`}
                           alt="Sweet Potato"
-                          className="h-full w-full object-contain transition-transform duration-500 drop-shadow-md group-hover:scale-110"
+                          className="h-full w-full object-contain transition-all duration-500 drop-shadow-md group-hover:scale-110 group-hover:rotate-2"
                         />
                       </div>
                     </div>
-                    {/* Scoop Handle */}
-                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-12 bg-nutri-beige/80 rounded-b-full"></div>
+                    {/* Scoop Handle with enhanced effect */}
+                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-12 bg-gradient-to-b from-nutri-beige/80 to-nutri-beige/60 rounded-b-full group-hover:scale-110 transition-transform duration-500"></div>
+                    {/* Hover label */}
+                    <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/90 px-4 py-1 rounded-full text-nutri-orange font-medium text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      Best Seller
+                    </div>
                   </div>
                   
-                  {/* Product Info */}
+                  {/* Product Info with enhanced styling */}
                   <div className="text-center">
-                    <h3 className="text-xl font-bold text-nutri-green group-hover:text-nutri-orange transition-colors">
+                    <h3 className="text-xl font-bold text-nutri-green group-hover:text-nutri-orange transition-colors duration-300">
                       Sweet Potato Flavor
                     </h3>
                     <p className="text-gray-600 my-3 text-sm">
@@ -394,7 +422,7 @@ const Index = () => {
                     <Link to="/products/sweet-potato">
                       <Button 
                         variant="outline" 
-                        className="rounded-full border-nutri-orange border-2 text-nutri-orange hover:bg-nutri-orange hover:text-white transition-colors duration-300"
+                        className="rounded-full border-nutri-orange border-2 text-nutri-orange hover:bg-nutri-orange hover:text-white transition-all duration-300 hover:scale-105"
                       >
                         Try This Flavor
                       </Button>
@@ -550,7 +578,7 @@ const Index = () => {
               <div className="flex items-center gap-3 mb-4">
                 <div className="bg-white rounded-full p-2">
                   <img 
-                    src="/Nutriscoop-Web/images/nutriscoop_logo.png"
+                    src={`${import.meta.env.BASE_URL}assets/images/nutriscoop_logo.png`}
                     alt="NutriScoop"
                     className="h-12 w-auto"
                   />
