@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, Target, Award, Building } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { Facebook, Instagram, MapPin, Mail, Clock } from "lucide-react";
-import Footer from "@/components/Footer";
+import Footer from '../components/Footer';
 
 const About = () => {
   const location = useLocation();
@@ -61,12 +61,12 @@ const About = () => {
               <div className="grid md:grid-cols-5 gap-0">
                 <div className="relative overflow-hidden md:col-span-3">
                   <div className="absolute inset-0 bg-gradient-to-r from-nutri-green/30 to-nutri-orange/30 opacity-30 mix-blend-overlay"></div>
-                  <img 
-                    src={`${import.meta.env.BASE_URL || ''}images/staff.png`}
-                    alt="NutriScoop Store" 
-                    className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
+                  <img
+                    src={`${import.meta.env.BASE_URL || ''}images/nutriscoop_logo.png`}
+                    alt="NutriScoop"
+                    className="h-16 w-auto mr-3"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent md:bg-gradient-to-t md:from-black/50 md:via-transparent md:to-transparent"></div>
+                  <div className="absolute inset-0 bg-[url('${import.meta.env.BASE_URL || ''}images/nutriscoop background.jpg')] bg-cover bg-center opacity-5"></div>
                   
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                     <div className="flex items-center gap-3 mb-2">

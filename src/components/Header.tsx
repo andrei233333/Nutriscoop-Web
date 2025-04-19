@@ -20,7 +20,7 @@ export const Header = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-nutri-green to-nutri-orange opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div className="relative bg-white rounded-full p-1">
               <img 
-                src={`${import.meta.env.BASE_URL}images/nutriscoop_logo.png`}
+                src={`${import.meta.env.BASE_URL || ''}images/nutriscoop_logo.png`}
                 alt="NutriScoop Logo" 
                 className="h-10 w-10 object-contain"
               />
@@ -88,7 +88,7 @@ export const Header = () => {
             <SheetContent className="bg-white border-l border-nutri-green/10">
               <div className="flex justify-center mb-8 mt-4">
                 <img 
-                  src={`${import.meta.env.BASE_URL}images/nutriscoop_logo.png`}
+                  src={`${import.meta.env.BASE_URL || ''}images/nutriscoop_logo.png`}
                   alt="NutriScoop Logo" 
                   className="h-16 w-16"
                 />
