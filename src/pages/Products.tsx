@@ -183,7 +183,7 @@ const Products = () => {
               </div>
               <div className="md:col-span-2 bg-nutri-green p-8 flex items-center justify-center">
                 <div className="text-center text-white">
-                  <img src={`${import.meta.env.BASE_URL || ''}assets/images/nutriscoop_logo.png`} alt="NutriScoop" className="h-24 w-auto mx-auto mb-4" />
+                  <img src={`${import.meta.env.BASE_URL || ''}images/nutriscoop_logo.png`} alt="NutriScoop" className="h-24 w-auto mx-auto mb-4" />
                   <h4 className="text-xl font-bold mb-2">NutriScoop</h4>
                   <p className="text-white/80">
                     Where Health Meets Pleasure
