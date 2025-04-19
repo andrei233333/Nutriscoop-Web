@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import Footer from "@/components/Footer";
 
 const Contact = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -298,90 +299,7 @@ const Contact = () => {
         </div>
       </section>
       
-      {/* Footer */}
-      <footer className="bg-nutri-green text-white relative overflow-hidden">
-        {/* Background Elements */}
-        <div className="absolute inset-0 bg-[url('/images/nutriscoop\ background.jpg')] bg-cover bg-center opacity-5"></div>
-        <div className="absolute -top-12 sm:-top-24 -right-12 sm:-right-24 w-32 sm:w-64 md:w-96 h-32 sm:h-64 md:h-96 bg-nutri-orange/10 rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-16 sm:-bottom-32 -left-16 sm:-left-32 w-32 sm:w-64 md:w-96 h-32 sm:h-64 md:h-96 bg-nutri-green-dark/20 rounded-full blur-3xl"></div>
-        
-        <div className="container py-8 sm:py-10 md:py-16 px-4 sm:px-6 md:px-4 relative">
-          {/* Logo and Footer Content */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-12 mb-6 sm:mb-8 md:mb-12">
-            {/* Logo and Tagline */}
-            <div>
-              <div className="flex items-center mb-3 sm:mb-4 md:mb-6">
-                <img src="/images/nutriscoop_logo.png" alt="NutriScoop" className="h-10 sm:h-12 md:h-16 w-auto mr-2 sm:mr-3" />
-                <div>
-                  <h2 className="text-lg sm:text-xl md:text-2xl font-bold">NutriScoop</h2>
-                  <p className="text-nutri-green-100 text-xs sm:text-sm">Vegan Ice Cream</p>
-                </div>
-              </div>
-              <p className="text-nutri-green-100 mb-3 sm:mb-4 md:mb-6 text-xs sm:text-sm md:text-base">Delicious plant-based ice cream that's good for you and the planet. Made with love and natural ingredients.</p>
-              <div className="flex space-x-2 sm:space-x-3 md:space-x-4">
-                <a href="https://facebook.com/NutriScoopPh" className="bg-white/10 p-1.5 sm:p-2 rounded-full hover:bg-white/20 transition-colors">
-                  <Facebook className="h-4 w-4 sm:h-5 sm:w-5" />
-                </a>
-                <a href="https://instagram.com/NutriScoop.Ph" className="bg-white/10 p-1.5 sm:p-2 rounded-full hover:bg-white/20 transition-colors">
-                  <Instagram className="h-4 w-4 sm:h-5 sm:w-5" />
-                </a>
-              </div>
-            </div>
-            
-            {/* Quick Links */}
-            <div className="mt-4 sm:mt-0">
-              <h3 className="text-sm sm:text-base md:text-lg font-bold mb-2 sm:mb-3 md:mb-4 border-b border-white/20 pb-1 sm:pb-2">Quick Links</h3>
-              <nav className="grid grid-cols-2 gap-y-1 sm:gap-y-1.5 md:gap-y-2 text-xs sm:text-sm md:text-base">
-                <Link to="/about" className="text-nutri-green-100 hover:text-white transition-colors hover:translate-x-1 inline-block transform duration-200">
-                  About Us
-                </Link>
-                <Link to="/products" className="text-nutri-green-100 hover:text-white transition-colors hover:translate-x-1 inline-block transform duration-200">
-                  Products
-                </Link>
-                <Link to="/contact" className="text-nutri-green-100 hover:text-white transition-colors hover:translate-x-1 inline-block transform duration-200">
-                  Contact
-                </Link>
-                <Link to="/faq" className="text-nutri-green-100 hover:text-white transition-colors hover:translate-x-1 inline-block transform duration-200">
-                  FAQs
-                </Link>
-                <Link to="/privacy" className="text-nutri-green-100 hover:text-white transition-colors hover:translate-x-1 inline-block transform duration-200">
-                  Privacy Policy
-                </Link>
-                <Link to="/terms" className="text-nutri-green-100 hover:text-white transition-colors hover:translate-x-1 inline-block transform duration-200">
-                  Terms of Service
-                </Link>
-              </nav>
-            </div>
-            
-            {/* Contact Info */}
-            <div className="mt-4 md:mt-0">
-              <h3 className="text-sm sm:text-base md:text-lg font-bold mb-2 sm:mb-3 md:mb-4 border-b border-white/20 pb-1 sm:pb-2">Visit Our Store</h3>
-              <address className="text-nutri-green-100 not-italic text-xs sm:text-sm md:text-base">
-                <p className="mb-1 sm:mb-2 flex items-start gap-2">
-                  <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-nutri-orange shrink-0 mt-0.5" />
-                  <span>MXQG+RMR, Karuhatan Rd, Valenzuela, 1441 Metro Manila</span>
-                </p>
-                <p className="mb-1 sm:mb-2 flex items-start gap-2">
-                  <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-nutri-orange shrink-0 mt-0.5" />
-                  <a href="mailto:nutriscoop6@gmail.com" className="hover:text-white transition-colors">
-                    nutriscoop6@gmail.com
-                  </a>
-                </p>
-                <p className="flex items-start gap-2">
-                  <Clock className="h-4 w-4 sm:h-5 sm:w-5 text-nutri-orange shrink-0 mt-0.5" />
-                  <span>Monday - Sunday | 10 AM to 8 PM</span>
-                </p>
-              </address>
-            </div>
-          </div>
-          
-          {/* Footer Bottom */}
-          <div className="pt-3 sm:pt-4 md:pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm text-nutri-green-100">
-            <p>&copy; 2025 NutriScoop. All rights reserved.</p>
-            <p className="mt-2 sm:mt-0">Crafted with ❤️ for healthier choices.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
