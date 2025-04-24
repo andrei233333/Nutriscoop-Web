@@ -289,7 +289,7 @@ const Index = () => {
                   {/* Product Info with enhanced styling */}
                   <div className="text-center">
                     <h3 className="text-xl font-bold text-nutri-green group-hover:text-nutri-orange transition-colors duration-300">
-                      Carrot Flavor
+                      Carrot Delight
                     </h3>
                     <p className="text-gray-600 my-3 text-sm">
                       A bitter-sweet flavor beneficial for regulating sugar levels.
@@ -347,7 +347,7 @@ const Index = () => {
                   {/* Product Info with enhanced styling */}
                   <div className="text-center">
                     <h3 className="text-xl font-bold text-nutri-green group-hover:text-nutri-orange transition-colors duration-300">
-                      Corn Flavor
+                      Sweet Corn Dream
                     </h3>
                     <p className="text-gray-600 my-3 text-sm">
                       A milky sweet flavor rich in vitamins and antioxidants.
@@ -405,7 +405,7 @@ const Index = () => {
                   {/* Product Info with enhanced styling */}
                   <div className="text-center">
                     <h3 className="text-xl font-bold text-nutri-green group-hover:text-nutri-orange transition-colors duration-300">
-                      Cucumber Flavor
+                      Cucumber Refresh
                     </h3>
                     <p className="text-gray-600 my-3 text-sm">
                       A mild lightly sweet flavor high in water content.
@@ -463,7 +463,7 @@ const Index = () => {
                   {/* Product Info with enhanced styling */}
                   <div className="text-center">
                     <h3 className="text-xl font-bold text-nutri-green group-hover:text-nutri-orange transition-colors duration-300">
-                      Sweet Potato Flavor
+                      Sweet Potato Bliss
                     </h3>
                     <p className="text-gray-600 my-3 text-sm">
                       A naturally sweet flavor packed with antioxidants.
