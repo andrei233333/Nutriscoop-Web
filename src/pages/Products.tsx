@@ -75,14 +75,18 @@ const Products = () => {
                       
                       {/* Product Image */}
                       <div className="p-4">
-                        <div className="aspect-square rounded-xl overflow-hidden bg-white/40 backdrop-blur-sm p-2">
-                          <img
-                            src={`${import.meta.env.BASE_URL || ''}images/${product.id.replace('-', '_')}.png`}
-                            alt={product.title}
-                            className={`h-full w-full object-contain transition-transform duration-500 drop-shadow-md ${
-                              hoveredProduct === product.id ? 'scale-110' : 'scale-100'
-                            }`}
-                          />
+                        <div className="aspect-square rounded-xl overflow-hidden bg-white/40 backdrop-blur-sm p-2 group-hover:bg-white/60 transition-all duration-300">
+                          <div className="relative w-full h-full">
+                            <img
+                              src={`${import.meta.env.BASE_URL || ''}images/${product.id.replace('-', '_')}.png`}
+                              alt={product.title}
+                              className={`h-full w-full object-contain transition-all duration-500 drop-shadow-md ${
+                                hoveredProduct === product.id ? 'scale-110 rotate-2' : 'scale-100'
+                              }`}
+                            />
+                            {/* Hover Overlay */}
+                            <div className={`absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
+                          </div>
                         </div>
                       </div>
                     </div>

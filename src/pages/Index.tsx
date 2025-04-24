@@ -267,13 +267,15 @@ const Index = () => {
                     <div className="absolute top-0 right-0 w-16 h-16 bg-white/30 rounded-bl-full transform group-hover:scale-110 transition-transform duration-500"></div>
                     <div className="absolute bottom-0 left-0 w-16 h-16 bg-white/30 rounded-tr-full transform group-hover:scale-110 transition-transform duration-500"></div>
                     {/* Product Image */}
-                    <div className="relative p-4 w-full h-full flex items-center justify-center">
-                      <div className="aspect-square rounded-xl overflow-hidden">
+                    <div className="relative overflow-hidden rounded-xl bg-white/40 backdrop-blur-sm p-2 group-hover:bg-white/60 transition-all duration-300">
+                      <div className="relative w-full h-full">
                         <img
                           src={`${import.meta.env.BASE_URL || ''}images/carrot.png`}
                           alt="Carrot"
-                          className="w-32 h-32 object-contain"
+                          className="h-full w-full object-contain transition-all duration-500 drop-shadow-md group-hover:scale-110 group-hover:rotate-2"
                         />
+                        {/* Hover Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
                     </div>
                     {/* Scoop Handle with enhanced effect */}
@@ -323,13 +325,15 @@ const Index = () => {
                     <div className="absolute top-0 right-0 w-16 h-16 bg-white/30 rounded-bl-full transform group-hover:scale-110 transition-transform duration-500"></div>
                     <div className="absolute bottom-0 left-0 w-16 h-16 bg-white/30 rounded-tr-full transform group-hover:scale-110 transition-transform duration-500"></div>
                     {/* Product Image */}
-                    <div className="relative p-4 w-full h-full flex items-center justify-center">
-                      <div className="aspect-square rounded-xl overflow-hidden">
+                    <div className="relative overflow-hidden rounded-xl bg-white/40 backdrop-blur-sm p-2 group-hover:bg-white/60 transition-all duration-300">
+                      <div className="relative w-full h-full">
                         <img
                           src={`${import.meta.env.BASE_URL || ''}images/corn.png`}
                           alt="Corn"
-                          className="w-32 h-32 object-contain"
+                          className="h-full w-full object-contain transition-all duration-500 drop-shadow-md group-hover:scale-110 group-hover:rotate-2"
                         />
+                        {/* Hover Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
                     </div>
                     {/* Scoop Handle with enhanced effect */}
@@ -379,13 +383,15 @@ const Index = () => {
                     <div className="absolute top-0 right-0 w-16 h-16 bg-white/30 rounded-bl-full transform group-hover:scale-110 transition-transform duration-500"></div>
                     <div className="absolute bottom-0 left-0 w-16 h-16 bg-white/30 rounded-tr-full transform group-hover:scale-110 transition-transform duration-500"></div>
                     {/* Product Image */}
-                    <div className="relative p-4 w-full h-full flex items-center justify-center">
-                      <div className="aspect-square rounded-xl overflow-hidden">
+                    <div className="relative overflow-hidden rounded-xl bg-white/40 backdrop-blur-sm p-2 group-hover:bg-white/60 transition-all duration-300">
+                      <div className="relative w-full h-full">
                         <img
                           src={`${import.meta.env.BASE_URL || ''}images/cucumber.png`}
                           alt="Cucumber"
-                          className="w-32 h-32 object-contain"
+                          className="h-full w-full object-contain transition-all duration-500 drop-shadow-md group-hover:scale-110 group-hover:rotate-2"
                         />
+                        {/* Hover Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
                     </div>
                     {/* Scoop Handle with enhanced effect */}
@@ -435,13 +441,15 @@ const Index = () => {
                     <div className="absolute top-0 right-0 w-16 h-16 bg-white/30 rounded-bl-full transform group-hover:scale-110 transition-transform duration-500"></div>
                     <div className="absolute bottom-0 left-0 w-16 h-16 bg-white/30 rounded-tr-full transform group-hover:scale-110 transition-transform duration-500"></div>
                     {/* Product Image */}
-                    <div className="relative p-4 w-full h-full flex items-center justify-center">
-                      <div className="aspect-square rounded-xl overflow-hidden">
+                    <div className="relative overflow-hidden rounded-xl bg-white/40 backdrop-blur-sm p-2 group-hover:bg-white/60 transition-all duration-300">
+                      <div className="relative w-full h-full">
                         <img
                           src={`${import.meta.env.BASE_URL || ''}images/sweet_potato.png`}
                           alt="Sweet Potato"
-                          className="w-32 h-32 object-contain"
+                          className="h-full w-full object-contain transition-all duration-500 drop-shadow-md group-hover:scale-110 group-hover:rotate-2"
                         />
+                        {/* Hover Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
                     </div>
                     {/* Scoop Handle with enhanced effect */}
